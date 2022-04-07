@@ -1,8 +1,11 @@
 import telebot
 from telebot import types
 
+#import sys
+#sys.path.append('../')
+import GenshinTelegramGameBot
 
-bot = telebot.TeleBot('5139322528:AAH1lNOx7GQIfdGuI6MjZUKxlmIplfC63qM')
+bot = telebot.TeleBot()
 
 # Функция, обрабатывающая команду /start
 # Получение сообщений от юзера
