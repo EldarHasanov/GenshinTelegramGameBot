@@ -1,11 +1,22 @@
+import os
+
 import telebot
 from telebot import types
 
 #import sys
 #sys.path.append('../')
-import GenshinTelegramGameBot
+#import GenshinTelegramGameBot
 
-bot = telebot.TeleBot()
+#import sys
+#sys.path.insert(0, r'/from/root/directory')
+from dotenv import load_dotenv
+
+load_dotenv()
+
+#from ...TelegramGameBot.Secrets.Secrets import get_telegram_bot_token
+
+
+bot = telebot.TeleBot(os.getenv("TELEGRAM_BOT_TOKEN"))
 
 # Функция, обрабатывающая команду /start
 # Получение сообщений от юзера
