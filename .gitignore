@@ -5,3 +5,4 @@ Secrets/Secrers.py
 Secrets/__init__.py
 Secrets/__init__.py
 BotApi/.env
+DataBase/.env
