@@ -27,7 +27,7 @@ mona
 ningguang
 noelle
 qiqi
-shogun
+shougun
 razor
 rosaria
 kokomi
@@ -42,7 +42,7 @@ xiao
 xingqiu
 xinyan
 yaemiko
-yanfei
+feiyan
 yoimiya
 yunjin
 zhongli
