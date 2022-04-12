@@ -6,19 +6,26 @@
 import os
 from dotenv import load_dotenv
 #from sqlalchemy import create_engine
-import User
-import Element
-from sqlalchemy.orm import mapper
-
-from sqlalchemy import *
-from sqlalchemy.orm import create_session
+#import TelegramUser
+#import ElementDatabase
+#from sqlalchemy.orm import mapper
+#from sqlalchemy import *
+#from sqlalchemy.orm import create_session
+#from sqlalchemy.ext.declarative import declarative_base
+import sqlalchemy as sq
 from sqlalchemy.ext.declarative import declarative_base
+from sqlalchemy.orm import relationship
+from sqlalchemy.orm import Session
+
+import DatabaseConnectClass
 
 load_dotenv()
 
+#Base = declarative_base()
+#engine = create_engine(os.getenv("SQL_DATA_BASE"))
+#metadata = MetaData(bind=engine)
+
 Base = declarative_base()
-engine = create_engine(os.getenv("SQL_DATA_BASE"))
-metadata = MetaData(bind=engine)
 
 
 
@@ -35,10 +42,23 @@ def show_query_result(rest):
 # Press the green button in the gutter to run the script.
 if __name__ == '__main__':
     print_hi('PyCharm')
-    session = create_session(bind=engine)
 
-    session.begin()
-    session.add(User(usr_name='Derek', element='geo'))
-    session.commit()
 
+
+    engine = sq.create_engine(os.getenv("SQL_DATA_BASE"), echo=False)
+    Base.metadata.create_all(engine)
+    s = Session(engine)
+
+    q = s.query(DatabaseConnectClass.Elements)
+    num = q.count()
+    print(num)
+    print(q[num-1].beauty_name)
+    for a_rec in q:
+        print(a_rec.beauty_name)
+    #connection = engine.connect()
+    #metadata = sq.MetaData()
+
+    #TelegramUser.insert().values(usr_name='@lol', element='geo')
+    #rest = select(ElementDatabase.select())
+    #show_query_result(rest)
 # See PyCharm help at https://www.jetbrains.com/help/pycharm/

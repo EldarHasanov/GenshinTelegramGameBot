@@ -2,10 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d54d6e90-d796-4337-8a91-4b979fe31321" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Element.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/User.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/../.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DatabaseConnectClass.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TelegramUser.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BotApi/BotStart.py" beforeDir="false" afterPath="$PROJECT_DIR$/../BotApi/BotStart.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Element.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/User.py" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
